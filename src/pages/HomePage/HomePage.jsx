@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Rate } from '../../components/Rate';
+import { Rate } from '../../components/Rate/Rate';
 import './style.css';
 
 export const HomePage = () => {
@@ -16,11 +16,7 @@ export const HomePage = () => {
         <form>
           <div className="form-field">
             <label htmlFor="currency-select">Měna:</label>
-            <select
-              id="currency-select"
-              value={currency}
-              onChange={handleCurrencyChange}
-            >
+            <select id="currency-select" value={currency} onChange={handleCurrencyChange}>
               <option value="USD">Americký dolar</option>
               <option value="EUR">Euro</option>
               <option value="GBP">Britská libra</option>
