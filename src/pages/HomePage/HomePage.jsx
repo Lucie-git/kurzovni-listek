@@ -23,7 +23,7 @@ export const HomePage = () => {
             </select>
           </div>
         </form>
-        <Rate />
+        <Rate from={currency} />
       </div>
     </div>
   );
